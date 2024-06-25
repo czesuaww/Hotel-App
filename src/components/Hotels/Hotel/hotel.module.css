@@ -1,18 +1,20 @@
 .hotelContainer {
+  display: flex;
+  gap: 20px;
   border: 1px solid #cdcdcd;
   margin-bottom: 20px;
   background-color: rgb(218, 229, 247);
   box-sizing: border-box;
   padding: 20px;
 }
+
 .hotel {
   display: flex;
   justify-content: space-between;
-  /* width: 45%; */
   max-width: 650px;
+  flex-grow: 1;
   margin-bottom: 20px;
-  flex-wrap: wrap;
-  /* background-color: pink; */
+  background-color: #a3c8dd;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px;
@@ -29,21 +31,102 @@
   flex-direction: column;
   align-items: flex-start;
   margin: 0;
-  /* align-items: flex-start; */
+  padding-left: 10px;
 }
 
 .hotelName {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 .hotelCity {
   background-color: #eee5e5;
-  padding: 2px;
+  border: 1px solid #000;
+  padding: 2px 5px;
   border-radius: 5px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .moreInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   padding-left: 30px;
+}
+
+.score {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.showOffer {
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  padding: 2px 20px;
+}
+
+.aboutHotel {
+  display: flex;
+  padding-top: 20px;
+  width: 40%;
+}
+
+.aboutHotelText {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 1220px) {
+  .score,
+  .hotelName {
+    font-size: 1.5rem;
+  }
+
+  .showOffer {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 2px 10px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .hotel {
+    flex-direction: column;
+  }
+
+  .hotelImg {
+    margin: 0 auto;
+  }
+
+  .hotelInfoContainer,
+  .moreInfo {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .aboutHotel {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 672px) {
+  .aboutHotelText {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 582px) {
+  .hotelContainer {
+    flex-direction: column;
+  }
+
+  .aboutHotel {
+    width: 100%;
+  }
+
+  .aboutHotelText {
+    font-size: 1.3rem;
+  }
 }

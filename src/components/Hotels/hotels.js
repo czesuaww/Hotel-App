@@ -16,7 +16,7 @@ import styles from './hotels.module.css';
 const Hotels = () => {
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>Oferty:</h2>
+            <h2 className={styles.title}>Przedstawiamy nasze oferty:</h2>
             <Hotel />
             <Hotel />
         </div>
