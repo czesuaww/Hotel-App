@@ -1,0 +1,13 @@
+.container {
+  border: 1px solid #cdcdcd;
+  margin: 10px 0;
+  padding: 20px;
+  margin: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+}

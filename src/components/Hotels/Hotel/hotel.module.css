@@ -1,0 +1,49 @@
+.hotelContainer {
+  border: 1px solid #cdcdcd;
+  margin-bottom: 20px;
+  background-color: rgb(218, 229, 247);
+  box-sizing: border-box;
+  padding: 20px;
+}
+.hotel {
+  display: flex;
+  justify-content: space-between;
+  /* width: 45%; */
+  max-width: 650px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  /* background-color: pink; */
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.hotelImg {
+  width: 100%;
+  max-width: 300px;
+  border: 5px solid #f8f9fa;
+}
+
+.hotelInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  /* align-items: flex-start; */
+}
+
+.hotelName {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.hotelCity {
+  background-color: #eee5e5;
+  padding: 2px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.moreInfo {
+  padding-left: 30px;
+}
